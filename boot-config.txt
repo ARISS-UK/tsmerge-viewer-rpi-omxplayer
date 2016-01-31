@@ -24,6 +24,7 @@
 # uncomment if hdmi display is not detected and composite is being output
 #hdmi_force_hotplug=1
 
+overscan_scale=1
 # 1080i50 (ARISS EVENT)
 hdmi_group=1
 hdmi_mode=20
