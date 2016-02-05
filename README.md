@@ -16,6 +16,7 @@ reboot
 [clone git and cd]
 sudo cp boot-config.txt /boot/config.txt
 sudo cp rc.local /etc/rc.local
+sudo cp -r omxplayer-30thJan/* /
 ```
 
 Edit /etc/rc.local to enable the relevant script (goonhilly/landrover)
