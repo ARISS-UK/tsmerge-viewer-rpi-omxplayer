@@ -10,13 +10,24 @@ sudo rpi-update
 reboot
 ```
 
+## Install omxplayer from source
+
+```
+sudo apt-get install smbclient
+git clone https://github.com/popcornmix/omxplayer.git
+cd omxplayer/
+./prepare-native-raspbian.sh
+make ffmpeg
+make
+sudo make install
+```
+
 ## Installation
 
 ```
 [clone git and cd]
 sudo cp boot-config.txt /boot/config.txt
 sudo cp rc.local /etc/rc.local
-sudo cp -r omxplayer-30thJan/* /
 ```
 
 Edit /etc/rc.local to enable the relevant script (goonhilly/landrover)
