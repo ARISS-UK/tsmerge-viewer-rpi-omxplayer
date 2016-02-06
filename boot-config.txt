@@ -71,4 +71,8 @@ hdmi_ignore_edid=0xa5000080
 
 hdmi_force_hotplug=1
 #hdmi_drive=1
-decode_MPG2=0x2654de61
+
+# Local Pi License key
+#decode_MPG2=0x2654de61
+# Goonhilly Pi License key
+#decode_MPG2=0x3a817962
