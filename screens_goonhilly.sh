@@ -7,7 +7,7 @@ while ! ping -c 1 -W 3 10.155.0.1 > /dev/null; do
   sleep 1;
 done;
 sudo killall fbi;
-sudo fbi -T 1 -noverbose -a Black_Goonhilly_Standingby.png;
+sudo fbi -T 1 -noverbose -a ARISS-Pi-LogoOnly.png;
 
 while true; do
   sleep 3;
@@ -20,6 +20,6 @@ while true; do
       sleep 1;
     done;
     sudo killall fbi;
-    sudo fbi -T 1 -noverbose -a Black_Goonhilly_Standingby.png;
+    sudo fbi -T 1 -noverbose -a ARISS-Pi-LogoOnly.png;
   fi
 done;
