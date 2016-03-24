@@ -1,0 +1,6 @@
+[submodule "omxplayer"]
+	path = omxplayer
+	url = https://github.com/popcornmix/omxplayer.git
+[submodule "openvg"]
+	path = openvg
+	url = https://github.com/ajstarks/openvg

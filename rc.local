@@ -11,9 +11,10 @@
 #
 # By default this script does nothing.
 
-#/home/pi/ariss/screens_landrover.sh &
-#/home/pi/ariss/rx_landrover.sh &
-/home/pi/ariss/screens_goonhilly.sh &
-/home/pi/ariss/rx_goonhilly.sh &
+## Graphic
+/home/pi/ariss/graphic/ariss &
+
+## Omxplayer
+/home/pi/ariss/tsplayer.sh &
 
 exit 0

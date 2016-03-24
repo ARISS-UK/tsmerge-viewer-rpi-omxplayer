@@ -5,7 +5,7 @@ Scripts to allow a Pi to function as a display for the MPEG2/MP2 Transport Strea
 ## Pi Setup
 
 ```
-sudo apt-get install vim fbi rpi-update openvpn git
+sudo apt-get install vim rpi-update openvpn git
 sudo rpi-update
 reboot
 ```
@@ -13,13 +13,28 @@ reboot
 ## Install omxplayer from source
 
 ```
-sudo apt-get install smbclient
-git clone https://github.com/popcornmix/omxplayer.git
+git submodule update --init
 cd omxplayer/
 ./prepare-native-raspbian.sh
 make ffmpeg
 make
 sudo make install
+```
+
+## Install OpenVG Libraries
+
+```
+sudo apt-get install libjpeg8-dev indent libfreetype6-dev ttf-dejavu-core
+cd openvg/
+make
+make library
+sudo make install
+```
+
+## Compile Graphics (only required for new code / new arch)
+```
+cd graphic/
+make
 ```
 
 ## Installation
