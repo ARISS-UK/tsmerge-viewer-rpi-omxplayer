@@ -7,7 +7,7 @@
 
 int width, height;
 int logo_w = 737, logo_h = 720;
-char logo_path[50] = "ariss_logo.jpg";
+char logo_path[50] = "/home/pi/ariss/graphic/ariss_logo.jpg";
 
 void displayLogoConnecting(void) {
     Start(width, height);                   // Start the picture
