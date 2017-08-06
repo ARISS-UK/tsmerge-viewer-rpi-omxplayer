@@ -11,10 +11,7 @@
 #
 # By default this script does nothing.
 
-## Graphic
-/home/pi/ariss/graphic/ariss &
-
-## Omxplayer
-/home/pi/ariss/tsplayer.sh &
+screen -dmS netpipe /home/pi/ariss/netpipe.sh
+screen -dmS player /home/pi/ariss/player.sh
 
 exit 0

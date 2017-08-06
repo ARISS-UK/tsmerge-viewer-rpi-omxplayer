@@ -1,0 +1,12 @@
+[Unit]
+Description=ARISS Graphic Display
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/ariss-graphic
+Restart=on-always
+
+[Install]
+WantedBy=multi-user.target
